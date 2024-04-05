@@ -5,6 +5,10 @@ badge: enterprise
 
 You can access request and database audit logs through the Admin API.
 
+{% if_version gte:3.7.x %}
+The default order of audit log is by request timestamp - latest to oldest.
+
+{% endif_version %}
 For usage examples, see [Audit Logging in {{site.base_gateway}}](/gateway/{{page.release}}/kong-enterprise/audit-log/).
 
 ## List audit logs
