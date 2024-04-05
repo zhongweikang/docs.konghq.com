@@ -70,6 +70,22 @@ module Jekyll
                 name: kong
                 namespace: default
             ```
+
+        1.  Use the `GatewayClass` in your `Gateway`
+
+            ```yaml
+            kind: Gateway
+            apiVersion: gateway.networking.k8s.io/v1
+            metadata:
+              name: kong
+              namespace: default
+            spec:
+              gatewayClassName: kong
+              listeners:
+              - name: http
+                protocol: HTTP
+                port: 80
+            ```
       TEXT
     end
 
