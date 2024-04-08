@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/kong/jekyll-generator-single-source.git
-  revision: 38077708add0ee893bec13b16a7edeb692badd25
-  branch: DOCU-3690/conditional-rendering
+  revision: 824af543f28786695eb2078c9b98b71d824d1b9e
+  branch: i18n-spike
   specs:
     jekyll-generator-single-source (0.0.11)
       jekyll (>= 4.2, < 5.0)
@@ -226,6 +226,7 @@ DEPENDENCIES
   activesupport
   capybara
   foreman
+  i18n
   jekyll
   jekyll-generator-single-source!
   jekyll-include-cache
