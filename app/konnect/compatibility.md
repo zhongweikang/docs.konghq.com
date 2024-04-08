@@ -52,7 +52,7 @@ If you're looking for supported network protocols and entity scopes, see [Plugin
 
 {% assign hub = site.data.ssg_hub %}
 {% assign kong_extns = hub | where: "extn_publisher", "kong-inc" %}
-{% assign categories = site.extensions.categories %}
+{% assign categories = site.data.extensions.categories %}
 {% assign plugins = site.data.ssg_hub | where: "extn_publisher", "kong-inc" %}
 
 {% for category in categories %}
